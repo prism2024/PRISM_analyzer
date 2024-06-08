@@ -1,0 +1,15 @@
+make[2]: Entering directory '/home/dowon/patch-validation/analyzer'
+/usr/bin/install -c -C /home/dowon/patch-validation/analyzer/infer/bin/infer.exe /home/dowon/patch-validation/analyzer/infer/bin/infer
+make INTERACTIVE=1 /home/dowon/patch-validation/analyzer/infer/bin/infer-analyze /home/dowon/patch-validation/analyzer/infer/bin/infer-capture /home/dowon/patch-validation/analyzer/infer/bin/infer-compile /home/dowon/patch-validation/analyzer/infer/bin/infer-debug /home/dowon/patch-validation/analyzer/infer/bin/infer-explore /home/dowon/patch-validation/analyzer/infer/bin/infer-help /home/dowon/patch-validation/analyzer/infer/bin/infer-report /home/dowon/patch-validation/analyzer/infer/bin/infer-reportdiff /home/dowon/patch-validation/analyzer/infer/bin/infer-run
+make[3]: Entering directory '/home/dowon/patch-validation/analyzer/infer/src'
+make[3]: '/home/dowon/patch-validation/analyzer/infer/bin/infer-analyze' is up to date.
+make[3]: '/home/dowon/patch-validation/analyzer/infer/bin/infer-capture' is up to date.
+make[3]: '/home/dowon/patch-validation/analyzer/infer/bin/infer-compile' is up to date.
+make[3]: '/home/dowon/patch-validation/analyzer/infer/bin/infer-debug' is up to date.
+make[3]: '/home/dowon/patch-validation/analyzer/infer/bin/infer-explore' is up to date.
+make[3]: '/home/dowon/patch-validation/analyzer/infer/bin/infer-help' is up to date.
+make[3]: '/home/dowon/patch-validation/analyzer/infer/bin/infer-report' is up to date.
+make[3]: '/home/dowon/patch-validation/analyzer/infer/bin/infer-reportdiff' is up to date.
+make[3]: '/home/dowon/patch-validation/analyzer/infer/bin/infer-run' is up to date.
+make[3]: Leaving directory '/home/dowon/patch-validation/analyzer/infer/src'
+make[2]: Leaving directory '/home/dowon/patch-validation/analyzer/infer/src'

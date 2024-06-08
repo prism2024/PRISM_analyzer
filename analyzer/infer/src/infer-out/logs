@@ -1,0 +1,45 @@
+[3367949][      debug] Loading models took 27.275ms
+[3368183][      debug] Sqlite write daemon: starting up
+[3368183][      debug] Sqlite write daemon: set up complete, waiting for connections
+[3367949][environment] CWD = /home/dowon/patch-validation/analyzer/infer/src
+[3367949][environment] Read configuration in /home/dowon/patch-validation/analyzer/.inferconfig
+[3367949][environment] Project root = /home/dowon/patch-validation/analyzer/infer/src
+[3367949][environment] INFER_ARGS =   
+[3367949][environment] command line arguments:   /home/dowon/patch-validation/analyzer/infer/bin/infer
+[3367949][environment] Available memory at startup: 187871 MB
+[3367949][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net), spec-checker (Java)
+[3367949][environment] Scheduler: file
+[3367949][environment] Cores used: 64
+[3367949][environment] Infer version v1.1.0-f9b6f2bdf
+[3367949][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[3367949][environment] 
+[3367949][      debug] GC stats for capture:
+[3367949][      debug]   minor_words: 63
+[3367949][      debug]   promoted_words: 0
+[3367949][      debug]   major_words: 0
+[3367949][      debug]   minor_collections: 0
+[3367949][      debug]   major_collections: 0
+[3367949][      debug]   compactions: 0
+[3367949][      debug]   top_heap_words: 499712
+[3367949][      debug]   
+[3367949][  user warn] Nothing to compile. Have you run `infer capture`? Try cleaning the build first.
+[3367949][   progress] There was nothing to analyze.
+[3367949][      debug] GC stats for report:
+[3367949][      debug]   minor_words: 2300
+[3367949][      debug]   promoted_words: 0
+[3367949][      debug]   major_words: 0
+[3367949][      debug]   minor_collections: 0
+[3367949][      debug]   major_collections: 0
+[3367949][      debug]   compactions: 0
+[3367949][      debug]   top_heap_words: 499712
+[3367949][      debug]   
+[3367949][      debug] GC stats for main_process_full:
+[3367949][      debug]   minor_words: 1.88266e+06
+[3367949][      debug]   promoted_words: 170244
+[3367949][      debug]   major_words: 514934
+[3367949][      debug]   minor_collections: 5
+[3367949][      debug]   major_collections: 2
+[3367949][      debug]   compactions: 1
+[3367949][      debug]   top_heap_words: 499712
+[3367949][      debug]   
+[3368183][      debug] Sqlite write daemon: terminating

@@ -1,0 +1,13 @@
+Entering directory '/home/dowon/patch-validation/analyzer/infer'
+File "src/infer.ml", line 324, characters 8-25:
+324 |     let get_buggy_summary proc_name =
+              ^^^^^^^^^^^^^^^^^
+Warning 26: unused variable get_buggy_summary.
+File "src/infer.ml", line 338, characters 8-25:
+338 |     let get_patch_summary proc_name =
+              ^^^^^^^^^^^^^^^^^
+Warning 26: unused variable get_patch_summary.
+File "src/infer.ml", line 354, characters 10-22:
+354 |       let target_procs =
+                ^^^^^^^^^^^^
+Warning 26: unused variable target_procs.

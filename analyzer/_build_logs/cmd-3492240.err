@@ -1,0 +1,161 @@
+Entering directory '/home/dowon/patch-validation/analyzer/infer'
+File "src/aprval/basic_domain/SymDom.ml", line 535, characters 10-21:
+535 |   let rec is_constant = function
+                ^^^^^^^^^^^
+Warning 39: unused rec flag.
+File "src/aprval/basic_domain/SymDom.ml", line 145, characters 15-24:
+145 |         Extern Allocsite.(InstrNode.dummy_of ("APRVAL_CONST_INT_" ^ IntLit.to_string i))
+                     ^^^^^^^^^
+Warning 33: unused open Allocsite.
+File "src/aprval/basic_domain/SymDom.ml", line 147, characters 15-24:
+147 |         Extern Allocsite.(InstrNode.dummy_of ("APRVAL_CONST_FLOAT_" ^ F.asprintf "%f" flit))
+                     ^^^^^^^^^
+Warning 33: unused open Allocsite.
+File "src/aprval/basic_domain/SymDom.ml", line 225, characters 15-24:
+225 |         Extern Allocsite.(InstrNode.dummy_of ("APRVAL_CONST_STRING_" ^ str))
+                     ^^^^^^^^^
+Warning 33: unused open Allocsite.
+File "src/aprval/bottom_up/SpecCheckerFeatures.ml", line 36, characters 23-28:
+36 |   let remove_local_acc pdesc buggy_summary patch_summary = 0.0
+                            ^^^^^
+Warning 27: unused variable pdesc.
+File "src/aprval/bottom_up/SpecCheckerFeatures.ml", line 36, characters 29-42:
+36 |   let remove_local_acc pdesc buggy_summary patch_summary = 0.0
+                                  ^^^^^^^^^^^^^
+Warning 27: unused variable buggy_summary.
+File "src/aprval/bottom_up/SpecCheckerFeatures.ml", line 36, characters 43-56:
+36 |   let remove_local_acc pdesc buggy_summary patch_summary = 0.0
+                                                ^^^^^^^^^^^^^
+Warning 27: unused variable patch_summary.
+File "src/aprval/bottom_up/SpecCheckerFeatures.ml", line 38, characters 23-36:
+38 |   let remove_param_acc buggy_summary patch_summary = 0.0
+                            ^^^^^^^^^^^^^
+Warning 27: unused variable buggy_summary.
+File "src/aprval/bottom_up/SpecCheckerFeatures.ml", line 38, characters 37-50:
+38 |   let remove_param_acc buggy_summary patch_summary = 0.0
+                                          ^^^^^^^^^^^^^
+Warning 27: unused variable patch_summary.
+File "src/aprval/bottom_up/SpecCheckerFeatures.ml", line 70, characters 20-25:
+70 |   let gen_local_acc pdesc buggy_summary patch_summary = 0.0
+                         ^^^^^
+Warning 27: unused variable pdesc.
+File "src/aprval/bottom_up/SpecCheckerFeatures.ml", line 70, characters 26-39:
+70 |   let gen_local_acc pdesc buggy_summary patch_summary = 0.0
+                               ^^^^^^^^^^^^^
+Warning 27: unused variable buggy_summary.
+File "src/aprval/bottom_up/SpecCheckerFeatures.ml", line 70, characters 40-53:
+70 |   let gen_local_acc pdesc buggy_summary patch_summary = 0.0
+                                             ^^^^^^^^^^^^^
+Warning 27: unused variable patch_summary.
+File "src/aprval/bottom_up/SpecCheckerFeatures.ml", line 72, characters 20-33:
+72 |   let gen_param_acc buggy_summary patch_summary = 0.0
+                         ^^^^^^^^^^^^^
+Warning 27: unused variable buggy_summary.
+File "src/aprval/bottom_up/SpecCheckerFeatures.ml", line 72, characters 34-47:
+72 |   let gen_param_acc buggy_summary patch_summary = 0.0
+                                       ^^^^^^^^^^^^^
+Warning 27: unused variable patch_summary.
+File "src/aprval/bottom_up/StateWithFeature.ml", line 31, characters 17-26:
+31 |   let from_state proc_desc astate =
+                      ^^^^^^^^^
+Warning 27: unused variable proc_desc.
+File "src/aprval/bottom_up/SpecCheckerFeatures.ml", line 36, characters 23-28:
+36 |   let remove_local_acc pdesc buggy_summary patch_summary = 0.0
+                            ^^^^^
+Warning 27: unused variable pdesc.
+File "src/aprval/bottom_up/SpecCheckerFeatures.ml", line 36, characters 29-42:
+36 |   let remove_local_acc pdesc buggy_summary patch_summary = 0.0
+                                  ^^^^^^^^^^^^^
+Warning 27: unused variable buggy_summary.
+File "src/aprval/bottom_up/SpecCheckerFeatures.ml", line 36, characters 43-56:
+36 |   let remove_local_acc pdesc buggy_summary patch_summary = 0.0
+                                                ^^^^^^^^^^^^^
+Warning 27: unused variable patch_summary.
+File "src/aprval/bottom_up/SpecCheckerFeatures.ml", line 38, characters 23-36:
+38 |   let remove_param_acc buggy_summary patch_summary = 0.0
+                            ^^^^^^^^^^^^^
+Warning 27: unused variable buggy_summary.
+File "src/aprval/bottom_up/SpecCheckerFeatures.ml", line 38, characters 37-50:
+38 |   let remove_param_acc buggy_summary patch_summary = 0.0
+                                          ^^^^^^^^^^^^^
+Warning 27: unused variable patch_summary.
+File "src/aprval/bottom_up/SpecCheckerFeatures.ml", line 70, characters 20-25:
+70 |   let gen_local_acc pdesc buggy_summary patch_summary = 0.0
+                         ^^^^^
+Warning 27: unused variable pdesc.
+File "src/aprval/bottom_up/SpecCheckerFeatures.ml", line 70, characters 26-39:
+70 |   let gen_local_acc pdesc buggy_summary patch_summary = 0.0
+                               ^^^^^^^^^^^^^
+Warning 27: unused variable buggy_summary.
+File "src/aprval/bottom_up/SpecCheckerFeatures.ml", line 70, characters 40-53:
+70 |   let gen_local_acc pdesc buggy_summary patch_summary = 0.0
+                                             ^^^^^^^^^^^^^
+Warning 27: unused variable patch_summary.
+File "src/aprval/bottom_up/SpecCheckerFeatures.ml", line 72, characters 20-33:
+72 |   let gen_param_acc buggy_summary patch_summary = 0.0
+                         ^^^^^^^^^^^^^
+Warning 27: unused variable buggy_summary.
+File "src/aprval/bottom_up/SpecCheckerFeatures.ml", line 72, characters 34-47:
+72 |   let gen_param_acc buggy_summary patch_summary = 0.0
+                                       ^^^^^^^^^^^^^
+Warning 27: unused variable patch_summary.
+File "src/aprval/bottom_up/StateWithFeature.ml", line 31, characters 17-26:
+31 |   let from_state proc_desc astate =
+                      ^^^^^^^^^
+Warning 27: unused variable proc_desc.
+File "src/aprval/basic_domain/SymDom.ml", line 535, characters 10-21:
+535 |   let rec is_constant = function
+                ^^^^^^^^^^^
+Warning 39: unused rec flag.
+File "src/aprval/basic_domain/SymDom.ml", line 145, characters 15-24:
+145 |         Extern Allocsite.(InstrNode.dummy_of ("APRVAL_CONST_INT_" ^ IntLit.to_string i))
+                     ^^^^^^^^^
+Warning 33: unused open Allocsite.
+File "src/aprval/basic_domain/SymDom.ml", line 147, characters 15-24:
+147 |         Extern Allocsite.(InstrNode.dummy_of ("APRVAL_CONST_FLOAT_" ^ F.asprintf "%f" flit))
+                     ^^^^^^^^^
+Warning 33: unused open Allocsite.
+File "src/aprval/basic_domain/SymDom.ml", line 225, characters 15-24:
+225 |         Extern Allocsite.(InstrNode.dummy_of ("APRVAL_CONST_STRING_" ^ str))
+                     ^^^^^^^^^
+Warning 33: unused open Allocsite.
+File "src/aprval/bottom_up/SpecCheckerModels.ml", line 430, characters 6-12:
+430 |   let mValue = Fieldname.make (Typ.Name.Java.from_string "Primitive") "mValue"
+            ^^^^^^
+Warning 32: unused value mValue.
+File "src/aprval/bottom_up/SpecCheckerDomain.ml", line 359, characters 61-62:
+359 |     | (SymHeap.Allocsite _ | SymHeap.String _ | SymHeap.Null _) as sheap ->
+                                                                   ^
+Warning 28: wildcard pattern given as argument to a constant constructor
+File "src/aprval/bottom_up/SpecCheckerDomain.ml", line 177, characters 4-14:
+177 | let update_loc astate loc = 
+          ^^^^^^^^^^
+Warning 32: unused value update_loc.
+File "src/aprval/bottom_up/SpecCheckerDomain.ml", line 452, characters 6-22:
+452 |   let resolve_nullptrs sym_resolved_map nullptrs_to_resolve nullptrs_to_update =
+            ^^^^^^^^^^^^^^^^
+Warning 32: unused value resolve_nullptrs.
+File "src/aprval/bottom_up/SpecCheckerDomain.ml", line 457, characters 24-40:
+457 |   let resolve_used_locs sym_resolved_map used_locs_to_resolve used_locs_to_update = 
+                              ^^^^^^^^^^^^^^^^
+Warning 27: unused variable sym_resolved_map.
+File "src/aprval/bottom_up/SpecCheckerDomain.ml", line 458, characters 19-20:
+458 |     Locs.fold (fun l acc -> 
+                         ^
+Warning 27: unused variable l.
+File "src/aprval/bottom_up/SpecCheckerDomain.ml", line 483, characters 20-23:
+483 |     with Unexpected msg ->
+                          ^^^
+Warning 27: unused variable msg.
+File "src/aprval/bottom_up/SpecChecker.ml", line 275, characters 8-18:
+275 |     let instr_node = InstrNode.of_pnode node instr in
+              ^^^^^^^^^^
+Warning 26: unused variable instr_node.
+File "src/aprval/SBFL.ml", line 8, characters 6-10:
+8 |   let sbfl = {classpath; line} in
+          ^^^^
+Warning 26: unused variable sbfl.
+File "src/aprval/bottom_up/SpecChecker.ml", line 275, characters 8-18:
+275 |     let instr_node = InstrNode.of_pnode node instr in
+              ^^^^^^^^^^
+Warning 26: unused variable instr_node.

@@ -1,0 +1,6 @@
+Entering directory '/home/dowon/patch-validation/analyzer/infer'
+File "src/infer.ml", line 380, characters 9-20:
+380 |       if is_analyzed then L.exit 0) 
+               ^^^^^^^^^^^
+Error: Unbound value is_analyzed
+make[1]: *** [Makefile:122: /home/dowon/patch-validation/analyzer/infer/bin/infer.exe] Error 1

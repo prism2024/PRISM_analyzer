@@ -1,0 +1,1 @@
+src/checkers/fragmentRetainsViewChecker.pp.ml: AndroidFramework Annotations Fieldname Format IStd IntraproceduralAnalysis IssueType Language List MarkupFormatter PatternMatch Procdesc Procname Reporting String Tenv Typ

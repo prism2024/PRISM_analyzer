@@ -1,0 +1,201 @@
+Entering directory '/home/dowon/patch-validation/analyzer/infer'
+File "src/aprval/basic_domain/SymDom.ml", line 398, characters 10-17:
+398 |   let rec is_heap = is_rec ~f:is_symheap
+                ^^^^^^^
+Warning 39: unused rec flag.
+File "src/aprval/basic_domain/SymDom.ml", line 401, characters 10-20:
+401 |   let rec is_unknown = is_rec ~f:(function SymHeap sh -> SymHeap.is_unknown sh | _ -> false)
+                ^^^^^^^^^^
+Warning 39: unused rec flag.
+File "src/aprval/basic_domain/SymDom.ml", line 403, characters 10-19:
+403 |   let rec is_extern = is_rec ~f:(function SymHeap sh -> SymHeap.is_extern sh | _ -> false)
+                ^^^^^^^^^
+Warning 39: unused rec flag.
+File "src/aprval/basic_domain/SymDom.ml", line 405, characters 10-22:
+405 |   let rec is_allocsite = is_rec ~f:(function SymHeap sh -> SymHeap.is_allocsite sh | _ -> false)
+                ^^^^^^^^^^^^
+Warning 39: unused rec flag.
+File "src/aprval/basic_domain/SymDom.ml", line 642, characters 10-21:
+642 |   let rec is_constant = function
+                ^^^^^^^^^^^
+Warning 39: unused rec flag.
+File "src/aprval/basic_domain/SymDom.ml", line 194, characters 15-24:
+194 |         Extern Allocsite.(node, 0, -2)
+                     ^^^^^^^^^
+Warning 33: unused open Allocsite.
+File "src/aprval/basic_domain/SymDom.ml", line 196, characters 15-24:
+196 |         Extern Allocsite.(node, 0, -1)
+                     ^^^^^^^^^
+Warning 33: unused open Allocsite.
+File "src/aprval/basic_domain/SymDom.ml", line 198, characters 15-24:
+198 |         Extern Allocsite.(InstrNode.dummy_of ("FL4APR_CONST_STRING_" ^ str), 0, 0)
+                     ^^^^^^^^^
+Warning 33: unused open Allocsite.
+File "src/aprval/basic_domain/SymDom.ml", line 299, characters 15-24:
+299 |         Extern Allocsite.(InstrNode.dummy_of ("FL4APR_CONST_INT_" ^ IntLit.to_string i), 0, 0)
+                     ^^^^^^^^^
+Warning 33: unused open Allocsite.
+File "src/aprval/basic_domain/SymDom.ml", line 301, characters 15-24:
+301 |         Extern Allocsite.(InstrNode.dummy_of ("FL4APR_CONST_FLOAT_" ^ F.asprintf "%f" flit), 0, 0)
+                     ^^^^^^^^^
+Warning 33: unused open Allocsite.
+File "src/aprval/bottom_up/SpecCheckerFeatures.ml", line 51, characters 17-26:
+51 |   let from_state proc_desc astate : t =
+                      ^^^^^^^^^
+Warning 27: unused variable proc_desc.
+File "src/aprval/bottom_up/SpecCheckerModels.ml", line 431, characters 6-12:
+431 |   let mValue = Fieldname.make (Typ.Name.Java.from_string "Primitive") "mValue"
+            ^^^^^^
+Warning 32: unused value mValue.
+File "src/aprval/bottom_up/SpecCheckerFeatures.ml", line 51, characters 17-26:
+51 |   let from_state proc_desc astate : t =
+                      ^^^^^^^^^
+Warning 27: unused variable proc_desc.
+File "src/aprval/basic_domain/SymDom.ml", line 398, characters 10-17:
+398 |   let rec is_heap = is_rec ~f:is_symheap
+                ^^^^^^^
+Warning 39: unused rec flag.
+File "src/aprval/basic_domain/SymDom.ml", line 401, characters 10-20:
+401 |   let rec is_unknown = is_rec ~f:(function SymHeap sh -> SymHeap.is_unknown sh | _ -> false)
+                ^^^^^^^^^^
+Warning 39: unused rec flag.
+File "src/aprval/basic_domain/SymDom.ml", line 403, characters 10-19:
+403 |   let rec is_extern = is_rec ~f:(function SymHeap sh -> SymHeap.is_extern sh | _ -> false)
+                ^^^^^^^^^
+Warning 39: unused rec flag.
+File "src/aprval/basic_domain/SymDom.ml", line 405, characters 10-22:
+405 |   let rec is_allocsite = is_rec ~f:(function SymHeap sh -> SymHeap.is_allocsite sh | _ -> false)
+                ^^^^^^^^^^^^
+Warning 39: unused rec flag.
+File "src/aprval/basic_domain/SymDom.ml", line 642, characters 10-21:
+642 |   let rec is_constant = function
+                ^^^^^^^^^^^
+Warning 39: unused rec flag.
+File "src/aprval/basic_domain/SymDom.ml", line 194, characters 15-24:
+194 |         Extern Allocsite.(node, 0, -2)
+                     ^^^^^^^^^
+Warning 33: unused open Allocsite.
+File "src/aprval/basic_domain/SymDom.ml", line 196, characters 15-24:
+196 |         Extern Allocsite.(node, 0, -1)
+                     ^^^^^^^^^
+Warning 33: unused open Allocsite.
+File "src/aprval/basic_domain/SymDom.ml", line 198, characters 15-24:
+198 |         Extern Allocsite.(InstrNode.dummy_of ("FL4APR_CONST_STRING_" ^ str), 0, 0)
+                     ^^^^^^^^^
+Warning 33: unused open Allocsite.
+File "src/aprval/basic_domain/SymDom.ml", line 299, characters 15-24:
+299 |         Extern Allocsite.(InstrNode.dummy_of ("FL4APR_CONST_INT_" ^ IntLit.to_string i), 0, 0)
+                     ^^^^^^^^^
+Warning 33: unused open Allocsite.
+File "src/aprval/basic_domain/SymDom.ml", line 301, characters 15-24:
+301 |         Extern Allocsite.(InstrNode.dummy_of ("FL4APR_CONST_FLOAT_" ^ F.asprintf "%f" flit), 0, 0)
+                     ^^^^^^^^^
+Warning 33: unused open Allocsite.
+File "src/aprval/bottom_up/SpecChecker.ml", line 120, characters 10-20:
+120 |   let rec check_null astate analysis_data node instr e =
+                ^^^^^^^^^^
+Warning 39: unused rec flag.
+File "src/aprval/bottom_up/SpecChecker.ml", lines 282-410, characters 4-16:
+282 | ....match instr with
+283 |     | Sil.Load {id} when Ident.is_none id ->
+284 |         (* Ignore empty dereference and null-check on virtual invocation *)
+285 |         [astate]
+286 |     (* | Sil.Load {id; e= Exp.Lvar pv} when Pvar.is_frontend_tmp pv && not (is_catch_var pv) ->
+...
+407 |     | Sil.Metadata (Nullify (_, _)) ->
+408 |         [astate]
+409 |     | Sil.Metadata (Abstract _) | Sil.Metadata Skip | Sil.Metadata (VariableLifetimeBegins _) ->
+410 |         [astate]
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+Metadata (CatchEntry _|TryEntry _|TryExit _)
+File "src/aprval/bottom_up/SpecChecker.ml", line 426, characters 18-22:
+426 |   let check_debug node instr astate =
+                        ^^^^
+Warning 27: unused variable node.
+File "src/aprval/bottom_up/SpecChecker.ml", line 426, characters 23-28:
+426 |   let check_debug node instr astate =
+                             ^^^^^
+Warning 27: unused variable instr.
+File "src/aprval/bottom_up/SpecChecker.ml", line 444, characters 8-18:
+444 |     let instr_node = InstrNode.of_pnode node instr in
+              ^^^^^^^^^^
+Warning 26: unused variable instr_node.
+File "src/aprval/bottom_up/SpecCheckerDomain.ml", line 316, characters 23-27:
+316 | let record_call astate node instr callee ret_value arg_values =
+                             ^^^^
+Warning 27: unused variable node.
+File "src/aprval/bottom_up/SpecCheckerDomain.ml", line 316, characters 28-33:
+316 | let record_call astate node instr callee ret_value arg_values =
+                                  ^^^^^
+Warning 27: unused variable instr.
+File "src/aprval/bottom_up/SpecCheckerDomain.ml", line 316, characters 51-61:
+316 | let record_call astate node instr callee ret_value arg_values =
+                                                         ^^^^^^^^^^
+Warning 27: unused variable arg_values.
+File "src/aprval/bottom_up/SpecCheckerDomain.ml", line 526, characters 6-22:
+526 |   let resolve_nullptrs sym_resolved_map nullptrs_to_resolve nullptrs_to_update =
+            ^^^^^^^^^^^^^^^^
+Warning 32: unused value resolve_nullptrs.
+File "src/aprval/bottom_up/SpecCheckerDomain.ml", line 565, characters 20-23:
+565 |     with Unexpected msg ->
+                          ^^^
+Warning 27: unused variable msg.
+File "src/aprval/bottom_up/SpecCheckerDomain.ml", line 1015, characters 16-22:
+1015 | let check_debug astate =
+                       ^^^^^^
+Warning 27: unused variable astate.
+File "src/aprval/SBFL.ml", line 8, characters 6-10:
+8 |   let sbfl = {classpath; line} in
+          ^^^^
+Warning 26: unused variable sbfl.
+File "src/aprval/bottom_up/SpecChecker.ml", line 120, characters 10-20:
+120 |   let rec check_null astate analysis_data node instr e =
+                ^^^^^^^^^^
+Warning 39: unused rec flag.
+File "src/aprval/bottom_up/SpecChecker.ml", lines 282-410, characters 4-16:
+282 | ....match instr with
+283 |     | Sil.Load {id} when Ident.is_none id ->
+284 |         (* Ignore empty dereference and null-check on virtual invocation *)
+285 |         [astate]
+286 |     (* | Sil.Load {id; e= Exp.Lvar pv} when Pvar.is_frontend_tmp pv && not (is_catch_var pv) ->
+...
+407 |     | Sil.Metadata (Nullify (_, _)) ->
+408 |         [astate]
+409 |     | Sil.Metadata (Abstract _) | Sil.Metadata Skip | Sil.Metadata (VariableLifetimeBegins _) ->
+410 |         [astate]
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+Metadata (CatchEntry _|TryEntry _|TryExit _)
+File "src/aprval/bottom_up/SpecChecker.ml", line 426, characters 18-22:
+426 |   let check_debug node instr astate =
+                        ^^^^
+Warning 27: unused variable node.
+File "src/aprval/bottom_up/SpecChecker.ml", line 426, characters 23-28:
+426 |   let check_debug node instr astate =
+                             ^^^^^
+Warning 27: unused variable instr.
+File "src/aprval/bottom_up/SpecChecker.ml", line 444, characters 8-18:
+444 |     let instr_node = InstrNode.of_pnode node instr in
+              ^^^^^^^^^^
+Warning 26: unused variable instr_node.
+File "src/integration/Driver.ml", lines 236-246, characters 4-20:
+236 | ....match (Config.command, mode) with
+237 |     | _, BuckClangFlavor _ when not (Option.exists ~f:BuckMode.is_clang_flavors Config.buck_mode) ->
+238 |         (* In Buck mode when compilation db is not used, analysis is invoked from capture if buck flavors are not used *)
+239 |         (false, false)
+240 |     | _ when Config.infer_is_clang || Config.infer_is_javac ->
+...
+243 |     | (Capture | Compile | Debug | Explore | Help | Report | ReportDiff), _ ->
+244 |         (false, false)
+245 |     | (Analyze | AnalyzeJson | Run), _ ->
+246 |         (true, true)
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(APRVAL, _)
+(However, some guarded clause may match this value.)
+File "src/infer.ml", line 380, characters 9-20:
+380 |       if is_analyzed then L.exit 0) 
+               ^^^^^^^^^^^
+Error: Unbound value is_analyzed
+make[1]: *** [Makefile:122: /home/dowon/patch-validation/analyzer/infer/bin/infer.exe] Error 1
